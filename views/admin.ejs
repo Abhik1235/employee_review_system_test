@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin</title>
+        <script
+            src="https://kit.fontawesome.com/6994f09273.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/dashboard.css" />
+        <link rel="stylesheet" href="/css/stylemenu.css" />
+    </head>
+    <body>
+        <div class="pseudo-container">
+            <nav class="header">
+                <div class="input-container">
+                    <div class="icon-input">
+                        <i class="fa fa-search input-icon" id="search-icon"></i>
+                        <input
+                            type="text"
+                            name="search"
+                            placeholder="Search..."
+                            autocomplete="nope" />
+                    </div>
+
+                    <div class="right-nav">
+                        <div class="input-container stick-right">
+                            <i class="fa fa-close input-icon"></i>
+                            <input
+                                type="submit"
+                                name="logout-user"
+                                id="btn-logout"
+                                value="Logout" />
+                        </div>
+                    </div>
+
+                    <div class="right-nav">
+                        <div class="input-container stick-right">
+                            <i class="fa fa-plus input-icon"></i>
+                            <a href="/api/createUser">
+                                <input
+                                    type="submit"
+                                    name="create-user"
+                                    value="CREATE EMPLOYEES"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="input-div">
+                <div class="users">
+                    <div class="user-header">
+                        <h5 class="user-header-h5 user-name">Employees</h5>
+                    </div>
+                    <div class="user-list"></div>
+                </div>
+
+                <div id="assign-review-div" class="assign-review-div">
+                    <div class="user-header">
+                        <h5
+                            class="user-header-h5 user-name"
+                            id="assign-review-title">
+                            Assign Review
+                        </h5>
+                    </div>
+                    <div class="user-list-assign"></div>
+                </div>
+
+                <div id="user-reviews" class="user-reviews">
+                    <div class="user-header">
+                        <h5 class="user-header-h5 user-name">Add Review</h5>
+                    </div>
+                    <textarea
+                        class="review-input"
+                        type="text"
+                        name="add-review-textarea"
+                        id="review-input"></textarea>
+
+                    <div class="input-container">
+                        <i class="fa fa-plus input-icon"></i>
+                        <input
+                            type="submit"
+                            name="add-review"
+                            value="ADD REVIEW"
+                            id="submit-review" />
+                    </div>
+                </div>
+
+                <div id="feedback-input" class="feedback-on-review">
+                    <div class="user-header">
+                        <h5
+                            class="user-header-h5 user-name"
+                            id="feedback-title">
+                            Add Feedback
+                        </h5>
+                    </div>
+                    <textarea
+                        class="review-input"
+                        type="text"
+                        name="add-review-textarea"
+                        id="feedback"></textarea>
+
+                    <div id="submit-feedback-button" class="input-container">
+                        <i class="fa fa-plus input-icon"></i>
+                        <input
+                            type="submit"
+                            name="add-feedback-btn"
+                            value="ADD FEEDBACK" />
+                    </div>
+                </div>
+
+                <div id="update-user" class="update-user">
+                    <div class="user-header">
+                        <h5
+                            class="user-header-h5 user-name"
+                            id="feedback-title">
+                            Update User
+                        </h5>
+                    </div>
+                    <input
+                        class="update-input"
+                        type="text"
+                        placeholder="First Name"
+                        name="first-name"
+                        id="update-user-first-name" />
+
+                    <input
+                        class="update-input"
+                        type="text"
+                        placeholder="Last Name"
+                        name="last-name"
+                        id="update-user-last-name" />
+
+                    <input
+                        class="update-input"
+                        type="text"
+                        placeholder="Email"
+                        name="email"
+                        id="update-user-email" />
+
+                    <div id="update-user-button" class="input-container">
+                        <i class="fa fa-send input-icon"></i>
+                        <input
+                            type="submit"
+                            name="add-feedback-btn"
+                            id="update-user-button"
+                            value="Update" />
+                    </div>
+                </div>
+
+                <div id="view-reviews-div" class="show-reviews">
+                    <div class="user-header">
+                        <h5 class="user-header-h5 user-name">View reviews</h5>
+                        <div class="reviews-list-div"></div>
+                    </div>
+                </div>
+
+                <div id="assigned-review-div" class="assigned-review-div">
+                    <div class="user-header">
+                        <h5
+                            class="user-header-h5 user-name"
+                            id="assign-review-title">
+                            Reviews Assigned to me
+                        </h5>
+                    </div>
+                    <div class="user-list-assign"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contextmenu">
+            <div class="list">
+                <div id="update" class="item">
+                    <i class="fa fa-pen"></i>
+                    Update
+                </div>
+                <div id="add-review" class="item">
+                    <i class="fa fa-plus"></i>
+                    Add Review
+                </div>
+                <div id="delete-user" class="item">
+                    <i class="fa fa-trash"></i>
+                    Delete
+                </div>
+                <div id="view-reviews" class="item">
+                    <i class="fa fa-eye"></i>
+                    View Reviews
+                </div>
+
+                <div id="assign-review" class="item">
+                    <i class="fa fa-bars"></i>
+                    Assign Reviewer
+                </div>
+                <div id="make-admin" class="item">
+                    <i class="fa fa-lock"></i>
+                    Make admin
+                </div>
+            </div>
+        </div>
+        <script src="/scripts/dashboard.js"></script>
+    </body>
+</html>
