@@ -9,7 +9,7 @@
         "watch": "nodemon server",
         "test": "mocha --timeout 10000 --exit"
     },
-    "author": "Mayur Kakade",
+    "author": "Abhik Chakraborty",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^5.1.0",

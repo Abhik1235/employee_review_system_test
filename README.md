@@ -1,4 +1,4 @@
-# [Employee Review System](https://devmayur.github.io/Employee-Review-System/)
+#
 
 This is a simple bug tracking application built with Node js, express js and EJS view engine with mongodb.
 
@@ -18,15 +18,11 @@ This is a simple bug tracking application built with Node js, express js and EJS
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/DevMayur/Employee-Review-System.git`
-2. Install dependencies: `npm install`
-3. Start the server: `npm run watch`
-4. Navigate to `http://localhost:8081/api/login` in your browser.
 
 ## Purpose
 
 Project is developed for skill test in coding ninjas.
 
 ## Test admin credentials
-email : mskakade111@gmail.com
-password : 1234567890
+email : avhikc@gmail.com
+password : Abhik
